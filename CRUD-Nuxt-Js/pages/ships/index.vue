@@ -28,11 +28,14 @@
                 <td>{{ ship.asal }}</td>
                 <td>{{ ship.tujuan }}</td>
                 <td>{{ ship.muatan }}</td>
+
                 <td>
+                  <div class="extion-container">
                   <!-- Tombol Hapus -->
                   <button @click="deleteShip(index)" class="btn btn-danger" style="margin-right: 10%; margin-left: 9%;">Delete</button>
                   <!-- Tombol Perbarui -->
                   <button @click="editShip(index)" class="btn btn-warning" style="margin-left: 9%;">Edit</button>
+                </div>
                 </td>
               </tr>
             </tbody>
@@ -160,6 +163,12 @@ input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
+}
+
+.extion-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
   </style>
   
